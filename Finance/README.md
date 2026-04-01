@@ -38,7 +38,7 @@ The project is built using **React** with **mock data**—no backend required.
 ---
 
 ## Installation
-1. Clone the repo:
+1. Clone the repo: https://github.com/AbdulAdnan7/FInanceUI
 ```bash
-git clone <your-repo-link>
+git clone https://github.com/AbdulAdnan7/FInanceUI
 cd finance-dashboard
