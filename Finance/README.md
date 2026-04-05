@@ -1,44 +1,55 @@
-# Finance Dashboard UI
+# Finance Dashboard
 
-## Overview
-This is a **frontend-only Finance Dashboard** built to simulate a user’s financial activity.  
-Users can:
-- View overall financial summary (Total Balance, Income, Expenses)
-- Explore transactions
-- Understand basic spending patterns via charts
-- Simulate roles (Viewer vs Admin)
+A modern, responsive finance dashboard with role-based UI controls, transaction management, and financial insights.
 
-The project is built using **React** with **mock data**—no backend required.
+## Features Implemented
 
----
+### ✅ Core Requirements
+1. **Dashboard Overview**
+   - Summary cards (Total Balance, Income, Expenses)
+   - Balance trend visualization (7-day chart)
+   - Spending breakdown by category
 
-## Features
-### Dashboard Overview
-- **Summary Cards:** Quick snapshot of balance, income, expenses
-- **Charts:**
-  - Balance Trend (Line Chart)
-  - Spending Breakdown (Pie/Bar Chart)
-- **Insights:** Highest spending category, monthly comparison
+2. **Transactions Section**
+   - Complete transaction list with date, amount, category, type
+   - Search functionality
+   - Filter by type (income/expense)
+   - Filter by category
+   - Sort by date, amount, or category
 
-### Transactions
-- Table with date, amount, category, type (income/expense)
-- Search, filter, and sorting features
-- Admin role can add/edit transactions (simulated)
+3. **Role-Based UI**
+   - Toggle between Viewer and Admin roles
+   - Admin: Can add/delete transactions
+   - Viewer: Read-only access
 
-### Role-Based UI
-- Viewer: Read-only access
-- Admin: Can edit/add transactions
-- Role switcher in the header to toggle roles
+4. **Insights Section**
+   - Highest spending category
+   - Monthly expense comparison
+   - Average transaction value
+   - Savings rate calculation
+   - Personalized spending tips
 
-### State Management
-- `AppContext` (Context API) manages transactions, filters, and selected role
-- All data is loaded from `mockTransactions.js`
-- Optional: localStorage persistence for simulating data saving
+5. **State Management**
+   - React Context API for global state
+   - Centralized filter management
+   - CRUD operations for transactions
 
----
+6. **UI/UX**
+   - Fully responsive design
+   - Smooth animations and transitions
+   - Empty state handling
+   - Mobile-friendly navigation
+
+### Bonus Features
+- Interactive charts (balance trend, spending breakdown)
+- Role-based UI indicators
+- Animated progress bars
+- Local storage support
+- Professional gradient designs
+
 
 ## Installation
 1. Clone the repo: https://github.com/AbdulAdnan7/FInanceUI
 ```bash
 git clone https://github.com/AbdulAdnan7/FInanceUI
-cd finance-dashboard
+cd Finance
