@@ -59,26 +59,30 @@ const Charts = ({ transactions }) => {
   const COLORS = ["#22c55e", "#3b82f6", "#ef4444", "#f59e0b"];
 
   return (
-    <div className="relatvie p-6 grid grid-cols-1 md:grid-cols-2 gap-6 ">
-      <div className="bg-white p-4 rounded-xl shadow">
-        <h1>Balance Trend</h1>
-
-        <ResponsiveContainer width={"100%"} height={250}>
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+      <div className="bg-white border border-gray-200 rounded-lg p-4">
+        <h3 className="text-lg font-semibold text-gray-900 mb-4">Balance Trend</h3>
+        <ResponsiveContainer width="100%" height={250}>
           <LineChart data={lineData}>
-            <XAxis dataKey="name" />
-            <YAxis />
-            <Tooltip />
-            <Line dataKey={"balance"} stroke="#3b83f6" />
+            <XAxis dataKey="name" axisLine={false} tickLine={false} tick={{ fontSize: 12, fill: '#6b7280' }} />
+            <YAxis axisLine={false} tickLine={false} tick={{ fontSize: 12, fill: '#6b7280' }} />
+            <Tooltip
+              contentStyle={{
+                backgroundColor: '#ffffff',
+                border: '1px solid #e5e7eb',
+                borderRadius: '6px'
+              }}
+            />
+            <Line dataKey="balance" stroke="#3b82f6" strokeWidth={2} dot={false} />
           </LineChart>
         </ResponsiveContainer>
       </div>
 
-      <div className="bg-white p-4 rounded-xl shadow">
-        <h2>Spending Breakdown</h2>
-
-        <ResponsiveContainer width={"100%"} height={250}>
+      <div className="bg-white border border-gray-200 rounded-lg p-4">
+        <h3 className="text-lg font-semibold text-gray-900 mb-4">Expense Breakdown</h3>
+        <ResponsiveContainer width="100%" height={250}>
           <PieChart>
-            <Pie data={pieData} dataKey="value" outerRadius={80} label>
+            <Pie data={pieData} dataKey="value" outerRadius={80} fill="#8884d8">
               {pieData.map((_, index) => (
                 <Cell key={index} fill={COLORS[index % COLORS.length]} />
               ))}

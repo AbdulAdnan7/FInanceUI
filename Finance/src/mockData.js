@@ -1,32 +1,88 @@
- const transactions = [
-    {
-      id: 1,
-      date: "2024-01-01",
-      amount: 1000,
-      type: "income",
-      category: "Salary",
-    },
-    {
-      id: 2,
-      date: "2024-01-05",
-      amount: 200,
-      type: "expense",
-      category: "Food",
-    },
-    {
-      id: 3,
-      date: "2024-02-01",
-      amount: 500,
-      type: "income",
-      category: "Freelance",
-    },
-    {
-      id: 4,
-      date: "2024-02-10",
-      amount: 300,
-      type: "expense",
-      category: "Shopping",
-    },
-  ];
+const transactions = [
+  {
+    id: 1,
+    date: "2024-01-01",
+    amount: 5000,
+    type: "income",
+    category: "Salary",
+  },
+  {
+    id: 2,
+    date: "2024-01-05",
+    amount: 200,
+    type: "expense",
+    category: "Food",
+  },
+  {
+    id: 3,
+    date: "2024-01-10",
+    amount: 150,
+    type: "expense",
+    category: "Transportation",
+  },
+  {
+    id: 4,
+    date: "2024-01-15",
+    amount: 300,
+    type: "expense",
+    category: "Entertainment",
+  },
+  {
+    id: 5,
+    date: "2024-02-01",
+    amount: 1000,
+    type: "income",
+    category: "Freelance",
+  },
+  {
+    id: 6,
+    date: "2024-02-05",
+    amount: 250,
+    type: "expense",
+    category: "Food",
+  },
+  {
+    id: 7,
+    date: "2024-02-12",
+    amount: 400,
+    type: "expense",
+    category: "Shopping",
+  },
+  {
+    id: 8,
+    date: "2024-02-20",
+    amount: 180,
+    type: "expense",
+    category: "Utilities",
+  },
+  {
+    id: 9,
+    date: "2024-03-01",
+    amount: 5200,
+    type: "income",
+    category: "Salary",
+  },
+  {
+    id: 10,
+    date: "2024-03-08",
+    amount: 300,
+    type: "expense",
+    category: "Food",
+  },
+  {
+    id: 11,
+    date: "2024-03-15",
+    amount: 200,
+    type: "expense",
+    category: "Transportation",
+  },
+  {
+    id: 12,
+    date: "2024-03-22",
+    amount: 500,
+    type: "expense",
+    category: "Rent",
+  },
+];
 
-export default transactions  
+export default transactions;  
