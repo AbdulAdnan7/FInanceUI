@@ -47,6 +47,7 @@ All core requirements met. All evaluation criteria addressed. Production-ready c
 - Fully responsive (mobile/tablet/desktop)
 - Lucide icon consistency
 - Tailwind CSS styling
+- Data persistence across sessions
 - Empty state handling
 - Form validation
 - Delete confirmation dialogs
@@ -234,8 +235,8 @@ dispatch(setRole("admin" | "viewer"))
 
 ## 📝 Notes
 
-- All data stored in Redux state (in-memory)
-- Page refresh resets to mock data
+- Data persists across browser sessions using localStorage
+- Falls back to mock data on first load or if localStorage is unavailable
 - Uses Tailwind CSS utility classes exclusively
 - No custom CSS files needed
 - Fully self-contained, no backend required
